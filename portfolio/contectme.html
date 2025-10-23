@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me - Hamza Emad Bojoq</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contectme.html">Contact Me</a>
+  </nav>
+
+  <h1>Contact Me</h1>
+
+  <form id="contactForm">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" placeholder="Enter your full name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="example@email.com">
+
+    <label for="country">Country:</label>
+    <select id="country">
+      <option value="" disabled selected>Select your country</option>
+      <option value="jordan">Jordan</option>
+      <option value="uae">United Arab Emirates</option>
+      <option value="ksa">Kingdom of Saudi Arabia</option>
+      <option value="syria">Syria</option>
+      <option value="usa">United States of America</option>
+
+    </select>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" rows="4" placeholder="Write your message here..."></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <footer>
+    <p>© 2025 Hamza Emad Bojoq</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const country = document.getElementById('country').value;
+      const comments = document.getElementById('comments').value;
+
+      if (name === '' || email === '' || country === '' || comments === '') {
+        alert('Please fill in all fields.');
+      } else {
+        alert('Form submitted successfully!');
+        document.getElementById('contactForm').reset();
+      }
+    });
+  </script>
+
+</body>
+</html>

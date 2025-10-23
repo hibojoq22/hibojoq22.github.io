@@ -1,0 +1,201 @@
+ body {
+      font-family: "Poppins", sans-serif;
+      background: #0d0d17; 
+      color: #e3e3e3;
+      padding: 40px 20px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background: linear-gradient(90deg, #4a00e0, #0077ff);
+      padding: 12px 20px;
+      border-radius: 12px;
+      margin-bottom: 35px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 25px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #c6b8ff;
+      transform: translateY(-1px);
+    }
+
+    /* Profile */
+    img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 15px auto;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0, 119, 255, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      color: #6c63ff;
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      /* text-align: center; */
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #cfd2f5;
+    }
+    .info {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #cfd2f5;
+    }
+    .about-me {
+      
+      font-size: 16px;
+      line-height: 1.8;
+      color: #d1d4f0;
+    }
+
+    /* Headings */
+    h2 {
+      color: #6c63ff;
+      border-left: 4px solid #0077ff;
+      padding-left: 10px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    /* Lists */
+    ul {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(108, 99, 255, 0.2);
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(108, 99, 255, 0.15);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: linear-gradient(90deg, #0077ff, #6c63ff);
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    tr:hover {
+      background: rgba(108, 99, 255, 0.1);
+    }
+
+    a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #a998ff;
+      text-decoration: underline;
+    }
+    /* Contact Form */
+    form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(108, 99, 255, 0.15);
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    label {
+      font-weight: bold;
+      color: #cfd2f5;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+    select option {
+      background: #0d0d17;
+      color: #fff;
+
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      background: rgba(108, 99, 255, 0.15);
+      box-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
+    }
+
+    button {
+      padding: 12px;
+      background: linear-gradient(90deg, #0077ff, #6c63ff);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px rgba(108, 99, 255, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #6c63ff;
+    }
+
+    footer a:hover {
+      color: #9c8bff;
+    }
